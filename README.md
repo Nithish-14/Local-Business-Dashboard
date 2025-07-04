@@ -9,7 +9,7 @@ This project is a fully responsive, SEO-simulation dashboard designed to demonst
 
 ## 🌐 Live Demo
 
-- 🚀 Frontend: [https://your-frontend-url.vercel.app](https://your-frontend-url.vercel.app)
+- 🚀 Frontend: [https://local-business-dashboard.vercel.app/](https://local-business-dashboard.vercel.app/)
 
 ---
 

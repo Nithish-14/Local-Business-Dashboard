@@ -17,7 +17,7 @@ function App() {
     setLocation(location);
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/business-data`, {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/business-data`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, location }),
@@ -36,7 +36,7 @@ function App() {
     if (!name || !location) return;
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/regenerate-headline?name=${encodeURIComponent(name)}&location=${encodeURIComponent(location)}`
+        `${import.meta.env.VITE_BACKEND_URL}/api/regenerate-headline?name=${encodeURIComponent(name)}&location=${encodeURIComponent(location)}`
       );
       const data = await res.json();
       if (businessData) {
